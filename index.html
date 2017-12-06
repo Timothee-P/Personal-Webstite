@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Timothée Poincheval</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+
+<body>
+    
+    <div class="loader">
+        <h1>Chargement</h1>
+        <p id="attente">Merci de prendre le temps d'attendre</p>
+    </div>
+
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jInvertScroll.min.js"></script>
+    <script type="text/javascript" src="js/velocity.min.js"></script>
+    <script src="js/script.js" defer></script>
+
+
+
+    <div class="horizon scroll">
+        <img src="images/Calque4.png" alt="" class="un" />
+    </div>
+
+    <div class="middle scroll">
+        <img src="images/Calque1.png" alt="" class="deux" />
+    </div>
+
+    <div class="front scroll">
+        <img src="images/Calque0.png" alt="" class="trois" />
+    </div>
+
+    <!--<div class="ligne scroll">
+        <img src="lignes.svg" alt="" class="trois">
+    </div>-->
+
+
+    <div class="Accueil scroll" id="position">
+        <section class="#one">
+            <div class="fleche">
+                <a href="" class="gauchefleche">
+                    <img src="images/flechevide.png" alt="" class="imagefleche">
+                </a>
+                <p>My School</p>
+                <a href="javascript:milieu()" class="droitefleche">
+                    <img src="images/flechedroite.png" alt="" class="imagefleche">
+                </a>
+            </div>
+            <a href="https://www.hetic.net">
+                <img src="images/hetic.png" alt="Logo Hétic">
+            </a>
+
+
+
+        </section>
+
+        <section class="#two">
+            <div class="fleche">
+                <a href="javascript:debut()" class="gauchefleche">
+                    <img src="images/flechegauche.png" alt="" class="imagefleche">
+                </a>
+                <p>Welcome On Timothée Poincheval Website</p>
+                <a href="javascript:fin()" class="droitefleche">
+                    <img src="images/flechedroite.png" alt="" class="imagefleche">
+                </a>
+            </div>
+
+        </section>
+
+        <section class="#three">
+            <div class="fleche">
+                <a href="javascript:milieu()" class="gauchefleche">
+                    <img src="images/flechegauche.png" alt="" class="imagefleche">
+                </a>
+                <p>Contact</p>
+                <a href="" class="droitefleche">
+                    <img src="images/flechevide.png" alt="" class="imagefleche">
+                </a>
+            </div>
+
+
+            <a href="mailto:timothee@poicncheval.fr" class="mail1">
+                <img src="images/mail.svg" alt="" class="message">
+
+                <p>timothee@poincheval.fr</p>
+            </a>
+
+        </section>
+
+    </div>
+
+
+
+
+    <script type="text/javascript">
+        $(window).load(function () {
+            $(".loader").velocity("slideUp", { delay: 0, duration: 2500 });
+
+        })
+    </script>
+
+
+
+</body>
+
+</html>
